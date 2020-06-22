@@ -25,8 +25,8 @@ Host someinternalhost
 
 ### Конфигурация и данные для подключения
 
-bastion = 35.228.138.52
-someinternalhost = 10.166.0.9
+bastion_IP = 35.228.138.52
+someinternalhost_IP = 10.166.0.9
 
 ### Дополнительное задание - SSL-сертификат для Pritunl
 
