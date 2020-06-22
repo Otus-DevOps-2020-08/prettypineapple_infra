@@ -22,3 +22,8 @@ Host someinternalhost
         ProxyJump appuser@35.228.138.52
         User appuser
 ```
+
+### Конфигурация и данные для подключения
+
+bastion = 35.228.138.52
+someinternalhost = 10.166.0.9
