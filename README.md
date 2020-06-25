@@ -25,8 +25,8 @@ Host someinternalhost
 
 ### Конфигурация и данные для подключения
 
-bastion_IP = 35.228.138.52
-someinternalhost_IP = 10.166.0.9
+- bastion_IP = 35.228.138.52
+- someinternalhost_IP = 10.166.0.9
 
 ### Дополнительное задание - SSL-сертификат для Pritunl
 
@@ -38,5 +38,9 @@ someinternalhost_IP = 10.166.0.9
 ## Домашнее задание к лекции №6
 
 ### Конфигурация и данные для подключения
-testapp_IP = 35.195.244.180
-testapp_port = 9292
+- testapp_IP = 35.195.244.180
+- testapp_port = 9292
+
+### Команда для создания правила через gcloud sdk
+
+```gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --target-tags=puma-server```
