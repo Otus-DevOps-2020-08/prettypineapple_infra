@@ -55,5 +55,5 @@ gcloud compute instances create reddit-app2\
   --machine-type=g1-small \
   --tags puma-server \
   --restart-on-failure \
-  --metadata-from-file startup-script=startup.sh
+  --metadata startup-script-url=gs://analog-patrol-test-bucket/startup.sh
 ```
