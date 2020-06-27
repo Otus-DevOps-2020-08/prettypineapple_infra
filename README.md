@@ -1,4 +1,5 @@
 # prettypineapple_infra
+
 prettypineapple Infra repository
 
 ## Домашнее задание к лекции №5
@@ -13,9 +14,9 @@ prettypineapple Infra repository
 
 ```
 Host bastion
-	HostName 35.228.138.52
+        HostName 35.228.138.52
         User appuser
-	IdentityFile ~/.ssh/appuser
+        IdentityFile ~/.ssh/appuser
 
 Host someinternalhost
         HostName 10.166.0.9
@@ -23,7 +24,7 @@ Host someinternalhost
         User appuser
 ```
 
-### Конфигурация и данные для подключения
+### Конфигурация и данные для подключения для ДЗ №5
 
 - bastion_IP = 35.228.138.52
 - someinternalhost_IP = 10.166.0.9
@@ -37,9 +38,10 @@ Host someinternalhost
 
 ## Домашнее задание к лекции №6
 
-### Конфигурация и данные для подключения
-testapp_IP = 35.195.244.180
-testapp_port = 9292
+### Конфигурация и данные для подключения для ДЗ №6
+
+- testapp_IP = 35.195.244.180
+- testapp_port = 9292
 
 ### Команда для создания правила через gcloud sdk
 
