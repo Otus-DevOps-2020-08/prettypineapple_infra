@@ -4,11 +4,16 @@
             "type": "googlecompute",
             "project_id": "{{user `project_id`}}",
             "image_name": "reddit-base-{{timestamp}}",
+            "image_description":"Reddit base image for OTUS DevOps course",
             "image_family": "reddit-base",
+            "image_labels": "puma-server",
             "source_image_family": "{{user `source_image_family`}}",
             "zone": "europe-west1-b",
             "ssh_username": "{{user `ssh_username`}}",
-            "machine_type": "{{user `machine_type`}}"
+            "machine_type": "{{user `machine_type`}}",
+            "disk_size": "10GB",
+            "disk_type":"pd-standard",
+            "network":"default"
         }
     ],
     "provisioners": [
