@@ -59,3 +59,9 @@ gcloud compute instances create reddit-app2\
   --restart-on-failure \
   --metadata startup-script-url=gs://analog-patrol-test-bucket/startup.sh
 ```
+
+## Домашнее задание к лекции №8
+
+### Создание ssh-ключей через web-интерфейс GCP
+
+Добавить новый ssh-ключ для доступа к VM через консоль GCP возможно, однако, команда `terraform plan` укажет, что добавленный вручную ключ после применения команды `terraform apply` будет удалён.
