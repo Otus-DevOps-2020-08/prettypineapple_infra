@@ -71,7 +71,7 @@ resource "google_compute_firewall" "firewall_puma" {
 resource "google_compute_firewall" "firewall_ssh" {
   name = "default-allow-ssh"
   network = "default"
-
+  description = "Allow SSH with terraform, not gcp"
   allow {
     protocol = "tcp"
     ports = ["22"]
