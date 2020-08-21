@@ -4,7 +4,7 @@ variable project {
 variable region {
   description = "Region"
   # Значение по умолчанию
-  default = "europe-west-1"
+  default = "europe-west1"
 }
 variable instance_zone {
   description = "Region"
