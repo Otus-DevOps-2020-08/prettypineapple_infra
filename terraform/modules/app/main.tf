@@ -1,4 +1,4 @@
-esource "google_compute_instance" "app" {
+resource "google_compute_instance" "app" {
   name = "reddit-app"
   machine_type = "g1-small"
   zone = var.instance_zone
