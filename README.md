@@ -87,3 +87,9 @@ gcloud compute instances create reddit-app2\
 1. Скрипт получает информацию для авторизации в GCP с помощью функции `compute = discovery.build('compute', 'v1')`, которая, в свою очередь, обращается к утилите `gcloud`. Для работы скрипта необходимо залогиниться в GCP через CLI с помощью `gcloud`;
 
 2. Имена инстансов, `reddit-app` и `reddit-db`, не валидны с точки зрения Ansible, поэтому их необходимо преобразовать в `reddit_app` и `reddit_db`.
+
+## Домашнее задание к лекции №11
+
+### Динамическая генерация inventory с помощью ansible-plugin
+
+Для формирования inventory в этом ДЗ используется ansible-plugin `gcp_compute`. Получение inventory описано в файле `gcp.yml`. В конфигурационном файле `ansible.cfg` добавлена строчка `inventory = ./gcp.yml`. Для функционирования плагина необходим файл `service-account.json`, в котором содержятся данные служебной учётной записи GCP. Данный файл добавлен в `.gitignore`.
