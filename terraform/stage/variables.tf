@@ -24,9 +24,9 @@ variable disk_image {
 }
 variable app_disk_image {
   description = "Disk image for reddit app"
-  default = "app-base"
+  default = "app-base-1604675300"
 }
 variable db_disk_image {
   description = "Disk image for mongodb"
-  default = "mongo-base"
+  default = "mongodb-base-1604675766"
 }

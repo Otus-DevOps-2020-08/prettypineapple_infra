@@ -6,3 +6,5 @@ packer/variables.json
 .terraform/
 .vscode/
 *.DS_Store
+*.retry
+ansible/service-account.json
