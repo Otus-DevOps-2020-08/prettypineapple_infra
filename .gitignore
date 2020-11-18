@@ -7,4 +7,4 @@ packer/variables.json
 .vscode/
 *.DS_Store
 *.retry
-ansible/service-account.json
+*service-account.json
