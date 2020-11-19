@@ -8,3 +8,4 @@ packer/variables.json
 *.DS_Store
 *.retry
 *service-account.json
+*jdauphant.nginx
