@@ -2,7 +2,7 @@
 # tasks file for app
 - name: Add unit file for Puma
   copy:
-    src: files/puma.service
+    src: puma.service
     dest: /etc/systemd/system/puma.service
   notify: reload puma
 
