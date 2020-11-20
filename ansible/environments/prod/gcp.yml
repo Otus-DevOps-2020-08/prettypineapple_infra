@@ -1,7 +1,7 @@
 ---
 plugin: gcp_compute
 projects:
-  - some-gcp-project-31337
+  - super-project-31337
 auth_kind: serviceaccount
 service_account_file: service-account.json
 groups:

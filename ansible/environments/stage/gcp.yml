@@ -1,0 +1,9 @@
+---
+plugin: gcp_compute
+projects:
+  - super-project-31337
+auth_kind: serviceaccount
+service_account_file: service-account.json
+groups:
+  reddit-app: "'app' in name"
+  reddit-db: "'db' in name"
