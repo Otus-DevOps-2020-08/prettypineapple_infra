@@ -16,3 +16,4 @@ packer/variables.json
 .molecule
 .cache
 .pytest_cache
+my_venv
