@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
         "reddit_db" => ["dbserver"],
         "reddit_db:vars" => {"mongo_bind_ip" => "0.0.0.0"}
         }
-      end
+    end
   end
 
   config.vm.define "appserver" do |app|
@@ -28,6 +28,9 @@ Vagrant.configure("2") do |config|
       ansible.groups = {
       "reddit_app" => ["appserver"],
       "reddit_app:vars" => {"db_host" => "10.10.10.10"}
+      }
+      ansible.extra_vars = {
+        "deploy_user" => "vagrant"
       }
     end
   end
