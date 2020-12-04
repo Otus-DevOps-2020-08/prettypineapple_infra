@@ -1,6 +1,6 @@
 ---
 - name: Install ruby and rubygems and required packages
-  apt: "name={{ item }} state=present"
+  apt: "name={{ item }} state=present install_recommends=yes update_cache=yes force=yes"
   with_items:
     - ruby-full
     - ruby-bundler
