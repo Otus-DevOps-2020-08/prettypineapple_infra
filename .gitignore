@@ -9,3 +9,11 @@ packer/variables.json
 *.retry
 *service-account.json
 *jdauphant.nginx
+# Vagrant & molecule
+.vagrant/
+*.log
+*.pyc
+.molecule
+.cache
+.pytest_cache
+my_venv
